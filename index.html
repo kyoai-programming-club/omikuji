@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'kbe4mwl',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+  <title>おみくじ - 前国プログラミングサークル</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>前国おみくじ</h1>
+    <p>MAEKOKU<span class="low">-</span>OMIKUJI</p>
+  </header>
+
+  <section class="btn" id="jsbtn">
+    <button>おみくじを引く</button>
+  </section>
+
+  <main>
+    <section class="result">
+      <h2 id="luck">運勢</h2>
+      <section class="desc">
+        <div>
+          <p class="te">願望</p>
+          <p class="p-2" id="desire">？</p>
+        </div>
+        <div>
+          <p>学歴</p>
+          <p class="p-2" id="record">？</p>
+        </div>
+        <div>
+          <p class="p-main" id="intention">あなたの本意がわかる</p>
+        </div>
+        <div>
+          <p>恋愛</p>
+          <p class="p-2" id="love">？</p>
+        </div>
+        <div>
+          <p>金運</p>
+          <p class="p-2" id="economic">？</p>
+        </div>
+      </section>
+    </section>
+  </main>
+  <footer>
+    <small>(c)2024 Kyoai Programming club</small>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
